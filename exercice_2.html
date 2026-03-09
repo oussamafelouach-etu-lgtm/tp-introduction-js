@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function jhms(dsTmp){ 
+         
+        var dmTmp=parseInt(dsTmp/60)
+        var dhTmp=parseInt(dmTmp/60)
+
+        var ds=dsTmp%60
+        dm=dmTmp%60
+        var dj=parseInt(dhTmp/24)
+        var dh=parseInt(dhTmp%24)
+        
+        
+        return "Une durée en secondes :"+dsTmp+
+           " cette durée équivaut à "+ dj +" jours "+ dh+ " heures " +dm+ "minutes " +ds+ " secondes";
+
+    }
+</script>
